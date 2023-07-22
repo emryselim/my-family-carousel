@@ -43,13 +43,26 @@ Resources:
             #! /bin/bash
             yum update -y
             yum install httpd -y
-            FOLDER="https://raw.githubusercontent.com/fevzibayrak/my-projects/main/AWS/projects/Project-101-kittens-carousel-static-website-ec2/static-web"
+            FOLDER="https://https://raw.githubusercontent.com/emryselim/my-family-carousel/main/static-web?token=GHSAT0AAAAAACFGXGS3XVPGTX64TMML6QLMZF4FUFA"
             cd /var/www/html
             wget $FOLDER/index.html
             wget $FOLDER/Cimg0013.jpg
             wget $FOLDER/Cimg0015.jpg
             wget $FOLDER/Cimg0016.jpg
             wget $FOLDER/Cimg0018.jpg
+            wget $FOLDER/Cimg0024.jpg
+            wget $FOLDER/Cimg0025.jpg
+            wget $FOLDER/Cimg0026.jpg
+            wget $FOLDER/Cimg0030.jpg
+            wget $FOLDER/Cimg0031.jpg
+            wget $FOLDER/Cimg0032.jpg
+            wget $FOLDER/Cimg0040.jpg
+            wget $FOLDER/Cimg0041.jpg
+            wget $FOLDER/Cimg0042.jpg
+            wget $FOLDER/Cimg0046.jpg
+            wget $FOLDER/Cimg0047.jpg
+            wget $FOLDER/Cimg0097.jpg
+            wget $FOLDER/Cimg0104.jpg
             systemctl start httpd
             systemctl enable httpd      
   
@@ -58,4 +71,4 @@ Outputs:
     Value: !Sub
       - http://${PublicAddress}
       - PublicAddress: !GetAtt WebServerHost.PublicDnsName
-    Description: Kittens Carousel Application URL
+    Description: Family Carousel Application URL
