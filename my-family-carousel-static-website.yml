@@ -43,8 +43,8 @@ Resources:
             #! /bin/bash
             yum update -y
             yum install httpd -y
-            FOLDER="https://https://raw.githubusercontent.com/emryselim/my-family-carousel/main/static-web?token=GHSAT0AAAAAACFGXGS3XVPGTX64TMML6QLMZF4FUFA"
             cd /var/www/html
+            FOLDER="https://raw.githubusercontent.com/emryselim/my-family-carousel/main/static-web"
             wget $FOLDER/index.html
             wget $FOLDER/Cimg0013.jpg
             wget $FOLDER/Cimg0015.jpg
